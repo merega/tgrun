@@ -1,0 +1,17 @@
+# Токен Telegram-бота от @BotFather. Храните файл с правами 0600.
+bot_token=
+
+# После заполнения bot_token выполните: tgrun get-chat-id
+chat_id=
+
+# Необязательно: ID темы в Telegram-форуме
+thread_id=
+
+# always | on-error | never
+send_output=on-error
+
+# Число последних строк вывода, добавляемых в уведомление
+output_lines=20
+
+# Тайм-аут запросов к Telegram
+http_timeout_seconds=15
