@@ -1,7 +1,9 @@
 #!/usr/bin/env sh
 set -eu
 
-BASE_URL=${TGRUN_BASE_URL:-https://tools.example.com/tgrun}
+REPO="merega/tgrun"
+BRANCH="main"
+BASE_URL="https://raw.githubusercontent.com/${REPO}/${BRANCH}"
 INSTALL_DIR=${TGRUN_INSTALL_DIR:-/usr/local/bin}
 CONFIG_PATH=${TGRUN_CONFIG_PATH:-/etc/tgrun.conf}
 

@@ -109,7 +109,7 @@ mysqldump --single-transaction --routines --events mydb \
 tgrun bash -lc '
 set -o pipefail
 
-BACKUP_FILE=$(ls -1t /data/backups/maindb-195-*.xb.gz 2>/dev/null | head -1)
+BACKUP_FILE=$(ls -1t /data/backups/maindb-*.xb.gz 2>/dev/null | head -1)
 if [[ -z "$BACKUP_FILE" ]]; then
     echo "Архив резервной копии не найден" >&2
     exit 1
